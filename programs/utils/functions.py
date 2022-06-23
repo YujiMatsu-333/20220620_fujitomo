@@ -64,21 +64,5 @@ def predictLabel(img):
   out = net(input)
   return predictor.predict_max(out)
 
-# def reduceImageDataVolume(img, filepath):
-#   # 500KBくらいに画像のデータ容量を変更
-#   # if img.size[0] * img.size[1] * 3 < 500000:
-#   #   return img
-#   # else:
-#   #   resized_width = int(500000 / 3 * img.size[0] / (img.size[0] + img.size[1]))
-#   #   resized_height = int(500000 / 3 * img.size[1] / (img.size[0] + img.size[1]))
-#   #   print(resized_width)
-#   #   print(resized_height)
-#   #   print(img.size)
-#   #   return img.resize((resized_width, resized_height))
-
-#   while os.path.getsize(filepath) < 500000:
-    
-#     img = img.resize((int(img.size[0]/2), int(img.size[1]/2)))
-#   return img
 
 
