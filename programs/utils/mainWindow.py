@@ -25,6 +25,7 @@ class ApplicationWindow(tk.Frame):
     )
     if len(self.tuple_filenames) == 0:
       self.creat_subWindow()
+    self.master.destroy()
   
   def creat_subWindow(self):
     subWIn = tk.Toplevel()
