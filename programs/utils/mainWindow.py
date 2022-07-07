@@ -1,3 +1,5 @@
+# CopyRight, 2022, Yuji Matsushita, クオリアラボ
+
 import tkinter as tk
 from tkinter import filedialog
 import os

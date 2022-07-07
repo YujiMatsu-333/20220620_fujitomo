@@ -1,3 +1,5 @@
+# CopyRight, 2022, Yuji Matsushita, クオリアラボ
+
 import numpy as np
 
 import torch

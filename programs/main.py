@@ -1,3 +1,5 @@
+# CopyRight, 2022, Yuji Matsushita, クオリアラボ
+
 '''
 仕分ける画像ファイルを選択し、ファイル名にラベルを追加して保存する。
 '''
@@ -20,7 +22,8 @@ def main():
   for fileName in tupple_filenames:
     # 画像のラベルを返し、保存
     pil_image = Image.open(fileName) # Pillowsで開く
-    exif = pil_image.info['exif'] # exif情報を取得
+    # exif = pil_image.info['exif'] # exif情報を取得
+    exif = pil_image.getexif() # exif情報を取得
     label = predictLabel(pil_image) # 予測されたラベルの取得
     # 画像の名前にラベルを追加して保存
     pil_image.save(path_output + label + '_' + os.path.basename(fileName), exif=exif)
